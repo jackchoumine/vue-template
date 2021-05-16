@@ -2,7 +2,7 @@
  * @Description: git 提交提示
  * @Date: 2021-05-16 22:12:55 +0800
  * @Author: JackChou
- * @LastEditTime: 2021-05-16 22:14:48 +0800
+ * @LastEditTime: 2021-05-16 23:05:00 +0800
  * @LastEditors: JackChou
  */
 // commitizen
@@ -10,19 +10,21 @@
 // npm install commitizen -g
 // 项目目录下安装
 // npm install commitizen --save-dev
+// 执行
 // commitizen init cz-customizable --save --save-exact
 module.exports = {
   types: [
     { value: 'feat', name: 'feat:     新功能' },
     { value: 'fix', name: 'fix:      修复' },
-    { value: 'docs', name: 'docs:     文档变更' },
-    { value: 'style', name: 'style:    代码格式(不影响代码运行的变动)' },
+    { value: 'merge', name: 'merge:    合并分支' },
+    { value: 'chore', name: 'chore:    构建过程或辅助工具的变动' },
     { value: 'refactor', name: 'refactor: 重构(既不是增加feature，也不是修复bug)' },
+    { value: 'style', name: 'style:    代码格式(不影响代码运行的变动)' },
+    { value: 'revert', name: 'revert:   回退' },
+    { value: 'docs', name: 'docs:     文档变更' },
+    { value: 'build', name: 'build:    打包' },
     { value: 'perf', name: 'perf:     性能优化' },
     { value: 'test', name: 'test:     增加测试' },
-    { value: 'chore', name: 'chore:    构建过程或辅助工具的变动' },
-    { value: 'revert', name: 'revert:   回退' },
-    { value: 'build', name: 'build:    打包' },
   ],
   // override the messages, defaults are as follows
   messages: {
