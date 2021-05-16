@@ -1,0 +1,116 @@
+{
+  // NOTE 不开启，否则 eslint 的 vue/max-attributes-per-line 和 prettier 冲突
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "vue",
+    "html",
+    "javascriptreact"
+  ],
+  "eslint.run": "onSave",
+  "eslint.alwaysShowStatus": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  // prettier 设置
+  "prettier.useEditorConfig": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.embeddedLanguageFormatting": "off",
+  "prettier.printWidth": 120,
+  "prettier.semi": false,
+  "prettier.arrowParens": "avoid",
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.scriptInitialIndent": false,
+  "vetur.format.defaultFormatter.html": "js-beautify-html", //勿使用 prettyhtml 格式化 vue 模板，容易冲突
+  "vetur.format.defaultFormatter.postcss": "none",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      // "wrap_attributes": "auto", // "force-aligned",
+      // "wrap_attributes": "auto", // 在超出行长度时才对属性进行换行
+      // "wrap_attributes": "force", // 对除第一个属性外的其他每个属性进行换行
+      // "wrap_attributes": "force-aligned", // 第一个以外的属性换行对齐
+      // "wrap_attributes": "force-expand-multiline", // 所有属性强制换行对齐
+      "wrap_attributes": "force-multiline", // 超出规定长度，换行对齐
+      // #vue 组件中html代码格式化样式
+      "wrap_line_length": 120,
+      "end_with_newline": false
+    },
+    "prettier": {
+      "singleQuote": true,
+      "semi": false,
+      "arrowParens": "avoid",
+      "html-whitespace-sensitivity": "ignore",
+      "printWidth": 120, // 超过最大值换行
+      "tabWidth": 2, // 缩进字节数
+      "useTabs": false, // 缩进不使用tab，使用空格
+      "proseWrap": "preserve", // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
+      "bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+      // "disableLanguages": [
+      //   "vue"
+      // ], // 不格式化vue文件，vue文件的格式化单独设置
+      "endOfLine": "auto", // 结尾是 \n \r \n\r auto
+      "eslintIntegration": false, //不让prettier使用eslint的代码格式进行校验
+      "htmlWhitespaceSensitivity": "ignore",
+      "ignorePath": ".prettierignore", // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
+      "jsxBracketSameLine": true, // 在jsx中把'>' 是否单独放一行
+      "jsxSingleQuote": true, // 在jsx中使用单引号代替双引号
+      "parser": "babel", // 格式化的解析器，默认是babylon
+      "requireConfig": false, // Require a 'prettierconfig' to format prettier
+      "stylelintIntegration": false, //不让prettier使用stylelint的代码格式进行校验
+      "trailingComma": "es5", // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号)
+      "tslintIntegration": false, // 不让prettier使用tslint的代码格式进行校验
+      "vueIndentScriptAndStyle": false,
+      "quoteProps": "as-needed",
+      "rangeStart": 0,
+      "overrides": [
+        {
+          "files": "*.md",
+          "options": {
+            "tabWidth": 2,
+          },
+        },
+      ],
+    }
+  },
+  // 这些文件将不会显示在工作空间中
+  "files.exclude": {
+    "**/node_modules": false
+  },
+  "cSpell.words": [
+    "Hljs",
+    "Mddhhmmss",
+    "Symbian",
+    "TDBX",
+    "abuffer",
+    "druation",
+    "editorconfig",
+    "fabs",
+    "getabcd",
+    "githook",
+    "indexs",
+    "inited",
+    "mixins",
+    "persistedstate",
+    "plopfile",
+    "plopjs",
+    "portfinder",
+    "proccess",
+    "qrcode",
+    "shengjin",
+    "sortablejs",
+    "tableset",
+    "xuanfeng",
+    "zmtab"
+  ],
+  "liveServer.settings.port": 5501,
+}

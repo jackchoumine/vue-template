@@ -1,0 +1,32 @@
+{
+  "recommendations": [
+    // 必需安装
+    "octref.vetur", // vue 语法高亮
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    // 强烈建议安装
+    "shenjiaolong.vue-helper", // UI 库自动提示，代码片段
+    "streetsidesoftware.code-spell-checker", // 英文单词检查，避免出现拼写错误
+    "donjayamanne.githistory", // 可视化查看 git 历史
+    "eamodio.gitlens", // 在文件中查看 git 最后一个提交，上一个无法看
+    "TabNine.tabnine-vscode", // 代码智能补全
+    "gruntfuggly.todo-tree", // TODO 列表
+    "mrmlnc.vscode-duplicate", // 快速复制目录、文件
+    "coenraads.bracket-pair-colorizer", // 高亮显示的配对的括号、大括号
+    "kamikillerto.vscode-colorize", // CSS SCSS LESS 颜色值显示颜色
+    "usernamehw.errorlens", // 高亮显示错误
+    "formulahendry.auto-rename-tag", // 联动编辑标签
+    "ionutvmi.path-autocomplete", // 路径补全
+    // 随意
+    "obkoro1.korofileheader", // 生成头文件
+    "vscode-icons-team.vscode-icons", // icon 图标
+    "ms-ceintl.vscode-language-pack-zh-hans", // 中文界面包
+  ],
+  "unwantedRecommendations": [
+    // 不建议安装这些，可能扩展不再维护、可能vscode内置该功能、可能内存占用多
+    "editorconfig.editorconfig",
+    "hookyqr.beautify",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "dbaeumer.jshint"
+  ]
+}
