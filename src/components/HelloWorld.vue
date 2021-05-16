@@ -2,7 +2,7 @@
  * @Description: 例子组件
  * @Date: 2021-05-16 20:00:28 +0800
  * @Author: JackChou
- * @LastEditTime: 2021-05-16 20:15:08 +0800
+ * @LastEditTime: 2021-05-16 20:37:19 +0800
  * @LastEditors: JackChou
 -->
 <template>
@@ -66,7 +66,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
