@@ -33,6 +33,7 @@ module.exports = {
     'no-var': 2,
     'prefer-const': 2,
     'spaced-comment': [2, 'always'],
+    'space-before-function-paren': [2, 'never'],
     'vue/require-name-property': 2,
     'vue/multiline-html-element-content-newline': 0,
     // 一行多少属性
