@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <el-button type="primary">测试element按需导入</el-button>
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
