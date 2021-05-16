@@ -3,7 +3,7 @@
  * @Hash: 不是路由组件
  * @Date: 2021-05-16 20:33:01 +0800
  * @Author: JackChou
- * @LastEditTime: 2021-05-16 20:33:02 +0800
+ * @LastEditTime: 2021-05-16 22:23:19 +0800
  * @LastEditors: JackChou
  */
 /*
@@ -17,5 +17,6 @@ module.exports = {
   hooks: {
     // git commit 前的钩子
     'pre-commit': 'lint-staged',
+    'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
   },
 }
