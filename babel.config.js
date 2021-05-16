@@ -2,11 +2,13 @@
  * @Description: babel 配置
  * @Date: 2021-05-16 20:00:28 +0800
  * @Author: JackChou
- * @LastEditTime: 2021-05-17 00:06:19 +0800
+ * @LastEditTime: 2021-05-17 01:00:18 +0800
  * @LastEditors: JackChou
  */
 module.exports = {
-  presets: ['@vue/cli-plugin-babel/preset', ['es2015', { modules: false }]],
+  // '@vue/cli-plugin-babel/preset',
+  // presets: [['es2015', { modules: false }]],
+  presets: ['@vue/cli-plugin-babel/preset'],
   plugins: [
     [
       'component',
